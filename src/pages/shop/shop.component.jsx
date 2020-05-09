@@ -21,7 +21,7 @@ class ShopPage extends React.Component {
   };
 
   render() {
-    const { collections, searchField } = this.state;
+    const { collections } = this.state;
     return (
       <div className="shop-page">
         <SearchBox placeholder="Search food" handleChange={this.handleChange} />

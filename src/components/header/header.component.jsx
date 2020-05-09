@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { createStructuredSelector } from "reselect";
-import { ReactComponent as Logo } from "../../assets/crown.svg";
 
 import "./header.style.scss";
 import { connect } from "react-redux";
@@ -13,7 +12,7 @@ import { selectCartHidden } from "../../redux/cart/cart.selector";
 const Header = ({ hidden }) => (
   <div className="header">
     <Link className="logo-container" to="/">
-      <Logo className="logo" />
+      <div className="logo" />
     </Link>
     <div className="options">
       <CartIcon />
